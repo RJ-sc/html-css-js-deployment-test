@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Review Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- Page title-->
+    <h1>Book Review</h1>
+    <form id="bookForm">
+      <!-- input for the book title-->
+      <label>Book Title
+        <input type="text" name="title" id="title">
+        <div class="error" id="err-title"></div>
+      </label>
+
+      <!-- input for the author name-->
+      <label>Author
+        <input type="text" name="author" id="author">
+        <div class="error" id="err-author"></div>
+      </label>
+
+      <!-- genre selection form element-->
+      <label>Genre
+        <select name="genre" id="genre">
+          <option value="">Select</option>
+          <option>Fiction</option>
+          <option>Non-fiction</option>
+          <option>Fantasy</option>
+          <option>Science Fiction</option>
+          <option>Romance</option>
+        </select>
+        <div class="error" id="err-genre"></div>
+      </label>
+
+      <!-- book rating input -->
+      <label>Rating (1-5)
+        <input type="number" name="rating" id="rating">
+        <div class="error" id="err-rating"></div>
+      </label>
+
+      <!-- input section for the review-->
+      <label>Review
+        <textarea name="review" id="review" rows="5"></textarea>
+        <div class="error" id="err-review"></div>
+      </label>
+
+      <!-- submit button-->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- section to display all of the data once the form is complete-->
+    <div id="resultArea"></div>
+  </main>
+
+  <!-- link to the .js file-->
+  <script src="script.js"></script>
+</body>
+</html>
